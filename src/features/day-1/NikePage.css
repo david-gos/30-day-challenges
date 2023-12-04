@@ -122,10 +122,10 @@ img {
 }
 
 .card:hover .card__infor-title {
-    transform: translate(-40px, -60px);
+    transform: translate(-28px, -60px);
 
 }
 
 .card:hover .card__infor-price {
-    transform: translate(-110px, -60px);
+    transform: translate(-98px, -60px);
 }

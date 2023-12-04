@@ -7,6 +7,7 @@ import { Button } from "~/components";
 export const NikePage = () => {
   const sizeShoes = [39, 40, 41, 42];
   const colorShoes = ["red", "green", "blue", "yellow"];
+
   return (
     <>
       <div className="container">
@@ -42,9 +43,9 @@ export const NikePage = () => {
             </div>
           </div>
           <div className="card__action">
-            <Button size="medium" label="Buy now" backgroundColor="#4daf54" />
+            <Button size="medium" label="Buy now" />
 
-            <Button size="medium" label="Add cart" backgroundColor="#4daf54" />
+            <Button variant="secondary" size="medium" label="Add cart" />
           </div>
         </Card>
       </div>

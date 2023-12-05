@@ -1,11 +1,7 @@
 import "./button.css";
 
 interface ButtonProps {
-  variant?: "primary" | "secondary";
-  /**
-   * What background color to use
-   */
-  backgroundColor?: string;
+  variant?: "primary" | "secondary" | "modal-open" | "modal-close";
   /**
    * How large should the button be?
    */
@@ -26,7 +22,6 @@ interface ButtonProps {
 export const Button = ({
   variant = "primary",
   size = "medium",
-  backgroundColor,
   label,
   ...props
 }: ButtonProps) => {
@@ -38,7 +33,6 @@ export const Button = ({
         `storybook-button--${size}`,
         `storybook-button--${variant}`,
       ].join(" ")}
-      style={{ backgroundColor }}
       {...props}
     >
       {label}

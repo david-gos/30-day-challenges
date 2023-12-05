@@ -1,7 +1,7 @@
-import { Card } from "~/components/Card";
+import { Card } from "~/components";
 import "./NikePage.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCartShopping, faHeart } from "@fortawesome/free-solid-svg-icons";
+import { CiShoppingCart, CiHeart } from "react-icons/ci";
+
 import { Button } from "~/components";
 
 export const NikePage = () => {
@@ -13,8 +13,8 @@ export const NikePage = () => {
       <div className="container">
         <Card>
           <div className="card__heading-icon">
-            <FontAwesomeIcon className="icon-style" icon={faHeart} />
-            <FontAwesomeIcon className="icon-style" icon={faCartShopping} />
+            <CiHeart className="icon-style" />
+            <CiShoppingCart className="icon-style" />
           </div>
           <div className="card__infor">
             <div className="card__infor-img">

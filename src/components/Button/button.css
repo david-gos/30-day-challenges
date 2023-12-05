@@ -11,7 +11,7 @@
   transition: 0.25s;
 }
 
-.storybook-button:hover {
+.storybook-button--primary:hover {
   transform: scale(0.9);
 }
 
@@ -20,7 +20,18 @@
 }
 
 .storybook-button--secondary {
-  background-color: #1ea7fd;
+  outline: none;
+  color: white;
+  background-color: transparent;
+  border: 1px solid var(--pink-1);
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: .5s;
+}
+
+.storybook-button--secondary:hover {
+  background-color: var(--pink-1);
 }
 
 .storybook-button--small {

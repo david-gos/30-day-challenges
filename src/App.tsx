@@ -1,14 +1,12 @@
-
-import './App.css'
-import { NikePage } from './features/day-1'
+import "./App.css";
+import { NikePage, ProfileCard } from "./features";
 
 function App() {
-
   return (
     <>
-      <NikePage/>
+      <ProfileCard />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,14 +1,12 @@
-
-import './App.css'
-import { NikePage } from './features/day-1'
+import "./App.css";
+import { ModalNotification } from "./features/day-3";
 
 function App() {
-
   return (
     <>
-      <NikePage/>
+      <ModalNotification />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,0 +1,71 @@
+:root {
+    --pink-2: #e26e70
+}
+
+.modal__background {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.4;
+}
+
+.modal__block {
+    position: absolute;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    height: fit-content;
+    transform: translateY(-40px);
+    border-radius: 5px;
+    animation: slide-from-top .5s;
+}
+
+@keyframes slide-from-top {
+    0% {
+        transform: translateY(-200px);
+        visibility: hidden;
+    }
+
+    100% {
+        transform: translateY(-40);
+        visibility: visible;
+    }
+}
+
+.modal__heading {
+    background-color: var(--pink-2);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+.modal__heading>h4 {
+    font-weight: 400;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.modal__heading-ic {
+    font-size: 20px;
+    stroke-width: 3;
+    cursor: pointer;
+}
+
+.modal__content {
+    margin: 15px;
+}
+
+.modal__content-title {
+    color: var(--pink-2);
+}
+
+.modal__action {
+    margin: 15px;
+    text-align: end;
+}
